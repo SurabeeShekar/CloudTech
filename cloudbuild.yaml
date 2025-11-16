@@ -1,8 +1,11 @@
 steps:
-  - name: 'gcr.io/cloud-builders/gcloud'
+  - name: gcr.io/cloud-builders/gcloud
     args:
-      [
-        'compute', 'instances', 'start',
-        'python-build-server',
-        '--zone=us-central1-a'
-      ]
+      - compute
+      - instances
+      - start
+      - cloudtech-vm
+      - --zone=us-central1-a
+
+options:
+  logging: CLOUD_LOGGING_ONLY
