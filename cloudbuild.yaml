@@ -6,6 +6,6 @@ steps:
       - |
         gcloud compute instances start instance-20251116-191014 \
           --zone=us-central1-c \
-          --project=cloudtech-XXXXX
+          --project=cloudtech-478419
 options:
   logging: CLOUD_LOGGING_ONLY
