@@ -1,9 +1,14 @@
 version: 0.2
 
 phases:
+  install:
+    commands:
+      - echo "Installing zip utility"
+      - yum install -y zip
+
   build:
     commands:
-      - echo "Packaging Lambda..."
+      - echo "Zipping Lambda Function"
       - zip lambda.zip lambda_function.py
 
 artifacts:
